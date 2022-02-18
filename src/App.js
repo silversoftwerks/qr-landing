@@ -32,17 +32,13 @@ class LambdaDemo extends Component {
     )
   }
 }
-const Guy=()=>  <div>
-            <p>Have you seen this guy?</p>
-         </div>
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-      		<Switch>
-          	<Route path="/" exact component={Guy} />
-					</Switch>
+	    h
         </header>
       </div>
     )
