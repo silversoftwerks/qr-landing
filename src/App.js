@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { Router, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import useGaTracker from './useGaTracker'
 import logo from "./logo.svg"
 import "./App.css"
