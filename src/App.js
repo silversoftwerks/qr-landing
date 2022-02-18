@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import { Route, Switch, Redirect } from 'react-router-dom'
-import useGaTracker from './useGaTracker'
+//import { Route, Switch, Redirect } from 'react-router-dom'
+//import useGaTracker from './useGaTracker'
 import logo from "./logo.svg"
 import "./App.css"
 
