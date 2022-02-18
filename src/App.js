@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-//import { Route, Switch, Redirect } from 'react-router-dom'
-//import useGaTracker from './useGaTracker'
+import { Route, Switch, Redirect } from 'react-router-dom'
+import useGaTracker from './useGaTracker'
 import logo from "./logo.svg"
 import "./App.css"
 
@@ -32,13 +32,17 @@ class LambdaDemo extends Component {
     )
   }
 }
-
+const Guy=()=>  <div>
+            <p>Have you seen this guy?</p>
+         </div>
 class App extends Component {
   render() {
     return (
       <div className="App">
         <header className="App-header">
-	    h
+      		<Switch>
+          	<Route path="/" exact component={Guy} />
+					</Switch>
         </header>
       </div>
     )
