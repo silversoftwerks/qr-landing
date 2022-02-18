@@ -32,23 +32,23 @@ class LambdaDemo extends Component {
     )
   }
 }
-const Guy=()=>  <div>
-            <p>Have you seen this guy?</p>
-         </div>
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-	    <Router>
-      		<Switch>
-          	<Route path="/" exact component={Guy} />
+const Guy = () => <div>
+			<p>Have you seen this guy?</p>
+		</div>
+const App =() => {
+	useGaTracker();
+    	return (
+		<div className="App">
+			<header className="App-header">
+	    			<Router>
+      					<Switch>
+						<Route path="/" exact component={Guy} />
 					</Switch>
-		</Router>
-        </header>
-      </div>
-    )
-  }
+				</Router>
+        		</header>
+      		</div>
+    	)
+  
 }
 
 export default App
