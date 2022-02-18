@@ -3,20 +3,25 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-d
 import useGaTracker from './useGaTracker'
 import logo from "./logo.svg"
 import "./App.css"
-import ReactPixel from 'react-facebook-pixel';
+// import ReactPixel from 'react-facebook-pixel';
 
-const advancedMatching = { em: 'some@email.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
-const options = {
-  autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-  debug: false, // enable logs
-};
-ReactPixel.init('yourPixelIdGoesHere', advancedMatching, options);
+// const advancedMatching = { em: 'some@email.com' }; // optional, more info: https://developers.facebook.com/docs/facebook-pixel/advanced/advanced-matching
+// const options = {
+//   autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+//   debug: false, // enable logs
+// };
+// ReactPixel.init('yourPixelIdGoesHere', advancedMatching, options);
 
-ReactPixel.pageView(); // For tracking page view
-ReactPixel.track(event, data); // For tracking default events. More info about standard events: https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events
-ReactPixel.trackSingle('PixelId', event, data); // For tracking default events.
-ReactPixel.trackCustom(event, data); // For tracking custom events. More info about custom events: https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#custom-events
-ReactPixel.trackSingleCustom('PixelId', event, data); // For tracking custom events.
+// ReactPixel.pageView(); // For tracking page view
+// ReactPixel.track(event, data); // For tracking default events. More info about standard events: https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#standard-events
+// ReactPixel.trackSingle('PixelId', event, data); // For tracking default events.
+// ReactPixel.trackCustom(event, data); // For tracking custom events. More info about custom events: https://developers.facebook.com/docs/facebook-pixel/implementation/conversion-tracking#custom-events
+// ReactPixel.trackSingleCustom('PixelId', event, data); // For tracking custom events.
+
+// componentDidMount() {
+//     const ReactPixel =  require('react-facebook-pixel');
+//     ReactPixel.default.init('yourPixelIdGoesHere');
+//   }
 
 class LambdaDemo extends Component {
   constructor(props) {
