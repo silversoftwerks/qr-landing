@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch, Redirect } from 'react-router-dom'
 import { useGaTracker } from './useGaTracker'
 import logo from "./logo.svg"
 import "./App.css"
@@ -59,11 +59,9 @@ const App =() => {
     	return (
 		<div className="App">
 			<header className="App-header">
-	    			<Router>
-      					<Switch>
-						<Route path="/" exact component={Guy} />
-					</Switch>
-				</Router>
+      				<Switch>
+					<Route path="/" exact component={Guy} />
+				</Switch>
         		</header>
       		</div>
     	)
