@@ -62,7 +62,7 @@ const qrCode = new QRCodeStyling({
 		height: 300,
 		type: "svg",
 		data: "https://inspiring-bhabha-0e80f6.netlify.app/",
-		image: "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg",
+		image: blackSrc,
 		dotsOptions: {
 		    color: "#4267b2",
 		    type: "rounded"
