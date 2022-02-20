@@ -62,7 +62,7 @@ const qrCode = new QRCodeStyling({
 		height: 300,
 		type: "svg",
 		data: "https://inspiring-bhabha-0e80f6.netlify.app/",
-		image: blackSrc,
+		image: "https://inspiring-bhabha-0e80f6.netlify.app/TylGuyogoInvert.png",
 		dotsOptions: {
 		    color: "#4267b2",
 		    type: "rounded"
