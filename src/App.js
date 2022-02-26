@@ -32,11 +32,9 @@ class LambdaDemo extends Component {
     this.state = { loading: false, msg: null };
   }
 
-  handleClick = (api) => (e) => {
-    e.preventDefault();
-
+  handleClick = () => {
     this.setState({ loading: true });
-    fetch("/.netlify/functions/" + api)
+    fetch("/.netlify/functions/hello")
       .then((response) => response.json())
       .then((json) => this.setState({ loading: false, msg: json.msg }));
   };
@@ -72,6 +70,7 @@ const Guy = () => {
       <p style={{ fontFamily: "monospace" }}>
         Have you seen <b>this</b> guy?
       </p>
+      <LambdaDemo></LambdaDemo>
     </div>
   );
 };
