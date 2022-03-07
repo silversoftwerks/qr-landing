@@ -70,7 +70,6 @@ const Guy = () => {
       <p style={{ fontFamily: "monospace" }}>
         Have you seen <b>this</b> guy?
       </p>
-      <LambdaDemo></LambdaDemo>
     </div>
   );
 };
