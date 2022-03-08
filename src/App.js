@@ -137,8 +137,8 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <Switch>
-    {/* <Route exact path="/" component={Guy} />*/}
-          <Route path="/" component={QrGen} />
+          <Route path={"/qrgen"} component={QrGen} />
+          <Route exact path={"/"} component={Guy} />
         </Switch>
       </header>
     </div>
