@@ -10,6 +10,8 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/TylGuyogoInvert.png">
+   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger-cx/bootstrap.js?v=1"></script>
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -22,8 +24,13 @@
     <title>Have you?</title>
   </head>
   <body>
-    <iframe height="430" width="350" src="https://bot.dialogflow.com/3b7eb61c-bcd0-4f75-995a-0bfd594bb862"></iframe>
-
+ <df-messenger
+  df-cx="true"
+  location="us-central1"
+  chat-title="Small talk"
+  agent-id="69d6cba3-1960-4e5b-86cc-ecb17bb90c8d"
+  language-code="en"
+></df-messenger>
     <noscript>
       You need to see this guy with JavaScript.
     </noscript>
